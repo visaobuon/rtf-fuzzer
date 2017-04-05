@@ -11,7 +11,7 @@ list_rtf = fuzzer.gen(cat = "rtf", num = 100)
 
 index = 0
 for rtf in list_rtf:
-    fileName = "C:\\Users\\khoanx.VISC\\Desktop\\" + str(index) + ".rtf"
+    fileName = "C:\\Users\\visaobuon\\Desktop\\" + str(index) + ".rtf"
     print fileName
     open(fileName, "wt").write(rtf)
     dbg = CDBFuzzer(programPath, crashDirectory, debuggerPath)
